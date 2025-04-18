@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+.bar {
+    height: 55px;
+    background-color: #0c8a10;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.bar a {
+    color: white;
+    text-decoration: none;
+}
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    position: relative;
+}
+.links a:first-child {
+    position: absolute;
+    left: 0;
+}
+.links a:last-child {
+    position: absolute;
+    right: 0;
+}
+
+/* Front Page */
+
+.front-page-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#0c8a10, #4CAF50);
+    color: #fff;
+}
+.frontpage h1 {
+    text-align: center;
+    max-width: 400px;
+    padding: 10px;
+}
+.frontpage p1 {
+    padding: 10px;
+    text-align: center;
+}
+.frontpage button {
+    width: 175px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #0c8a10;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #ececec;
+}
+.about {
+    background: #fff;
+    margin: 25px;
+    padding: 20px;
+    color: #0c8a10;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    height: 100vh;
+    align-content: center;
+
+}
+/* Sign Up Page */
+
+.signuppage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    max-width: 450px;
+    margin: auto;
+}
+.signuppage p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0c8a10; 
+    margin-bottom: 20px;
+}
+.signuppage form {
+    width: 100%;
+    background-color: #fff; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.signuppage label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0c8a10;
+    display: block;
+    margin-bottom: 5px;
+}
+.signuppage input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 5px;
+    color: #4CAF50;
+}
+.signuppage input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+.signuppage button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #0c8a10;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.signuppage button:hover {
+    background-color: #4CAF50;
+}
+
+/* Login Page */
+
+.loginpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 8px;
+}
+.loginpage p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0c8a10; 
+    margin-bottom: 20px;
+}
+.loginpage form {
+    width: 100%;
+    background-color: #fff; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.loginpage label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0c8a10;
+    display: block;
+    margin-bottom: 5px;
+}
+.loginpage input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 5px;
+    color: #4CAF50;
+}
+.loginpage input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+.loginpage button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #0c8a10;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.loginpage button:hover {
+    background-color: #4CAF50;
+}
+
+/* Main Search Page */
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.main-page h1 {
+    color: #0c8a10;
+}
+.main-page input {
+    padding: 12px;
+    margin: 15px auto;
+    border: 1px solid #4CAF50;
+    border-radius: 12px;
+    font-size: 13px;
+    color: #0c8a10;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.main-page input::placeholder {
+    color: rgba(12, 138, 16, 0.4);
+}
+.main-page input:focus {
+    outline: none;
+    border: 1px solid #0c8a10;
+    box-shadow: 0 0 3px #0c8a10;
+}
+.main-page li {
+    padding: 10px;
+    list-style: none;
+    color: #4CAF50;
+    transition: 0.3s;
+}
+.main-page li:hover {
+    color: #0c8a10;
+    cursor: pointer;
+}
+.main-page p {
+    color: #4CAF50;
+    padding: 10px;
+}
+.main-page button {
+    background-color: #0c8a10;
+    color: white;
+    margin: 20px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 300;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.main-page button:hover {
+    background-color: #4CAF50;
+    box-shadow: 0 0 5px #0c8a10;
+}
+
+/* Menu/Modal */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+.menu-content button {
+    background-color: #0c8a10;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 300;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.menu-content button:hover {
+    background-color: #4CAF50;
+}
+.menu p {
+    padding: 3px;
+    color: #0c8a10;
+}
+
+/* Custom Food Modal */
+.custom-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+.custom-content h2,
+.custom-content p,
+.custom-content input,
+.custom-content button {
+    margin: 5px 0;
+}
+.custom-content input {
+    height: 30px;
+}
+.custom-content button {
+    background-color: #0c8a10;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 300;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.custom-content button:hover {
+    background-color: #4CAF50;
+}
+
+/* Journal Page */
+.journal-page {
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    align-content: space-evenly;
+}
+.journal-page h1 {
+    padding-bottom: 5px;
+    color: #0c8a10;
+    font-size: 50px;
+}
+.journal-page input {
+    margin: 10px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 8px;
+    border: 1px solid #0c8a10;
+    color: #0c8a10
+}
+.journal-page p {
+    padding: 10px;
+}
+.journal-page h3 {
+    color: #0c8a10;
+}
+.meals {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.meal-types {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px auto;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    max-width: 700px;
+    margin: 10px auto;
+}
+@media (min-width: 768px) {
+    .meals {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.journal-page li {
+    padding: 5px;
+    list-style: none;
+    color: #4CAF50;
+    border-radius: 8px;
+    border: 1px solid #0c8a10;
+    width: 50%;
+    margin: 5px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.journal-page li:hover {
+    color: #0c8a10;
+    box-shadow: 0 0 3px #4CAF50;
+}
+.total-calories-today {
+    margin: 50px auto;
+    background-color: #0c8a10;
+    color: white;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.total-calories-today h2 {
+    padding-top: 10px;
+}
+.total-calories-today p {
+    padding: 10px;
+}
+
+/* User Settings Page*/
+.settings-page {
+    max-width: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.settings-page label {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.settings-page input {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #4CAF50;
+    font-size: 15px;
+}
+.settings-page input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0c8a10;
+}
+.settings-page button {
+    background-color: #0c8a10;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 300;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.settings-page button:hover {
+    box-shadow: 0 0 5px #4CAF50;
+}
